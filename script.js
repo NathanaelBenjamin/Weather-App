@@ -16,7 +16,7 @@ form.addEventListener('submit' ,(e) => {
     const weather = async ( ) => {
 
         var cityName = city.value.toLowerCase( );
-        const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&APPID=b34fddd3dae4a2eb0ad363b62f98ba1e');
+        const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=abeokuta&APPID=b34fddd3dae4a2eb0ad363b62f98ba1e');
         if(response.status !== 200 || response.status == 404){ 
             throw new Error('Error fetching data');
         }
