@@ -44,3 +44,8 @@ form.addEventListener('submit' ,(e) => {
         
     });
 });
+
+city.addEventListener('focus', ( ) => {
+    alert.style.display = 'none';
+    weatherDisplay.style.display = 'none';
+});
